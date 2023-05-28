@@ -2,22 +2,11 @@ from selenium.webdriver.common.by import By
 
 class TestLocators():
 
- button_skolko_stoit = [By.ID,'accordion__heading-0']
-button_hochu_neskolko_samokatov = [By.ID,'accordion__heading-1']
-button_kak_raschitivaetsya = [By.ID,'accordion__heading-2']
-button_mozhno_li_zakazat = [By.ID,'accordion__heading-3']
-button_mozhno_li_prodlit = [By.ID,'accordion__heading-4']
-button_vi_privozite_zaryadku = [By.ID,'accordion__heading-5']
-button_mozhno_otmenit_zakaz = [By.ID,'accordion__heading-6']
-button_i_zhivu_za_mkadom = [By.ID,'accordion__heading-7']
-but0 = [By.ID,'accordion__panel-0']
-but1 = [By.ID,'accordion__panel-1']
-but2 = [By.ID,'accordion__panel-2']
-but3 = [By.ID,'accordion__panel-3']
-but4 = [By.ID,'accordion__panel-4']
-but5 = [By.ID,'accordion__panel-5']
-but6 = [By.ID,'accordion__panel-6']
-but7 = [By.ID,'accordion__panel-7']
+ title_questions_about_important = [By.XPATH, ".//div[text()='Вопросы о важном']"]  # Заголовок Вопросы о важном
+menu = [By.XPATH, ".//*[@class='accordion']"]  # Гармошка с вопросами и ответами
+questions_menu = [By.XPATH, ".//*[contains(@id, 'accordion__heading-')]"]  # Список вопросов
+answers_menu = [By.XPATH, ".//*[contains(@id, 'accordion__panel-')]/p"]  # Список ответов
+accept_cookies = [By.XPATH, ".//button[@class='App_CookieButton__3cvqF' and text()='да все привыкли']"]
 button_order_on_down = [By.XPATH, ".//*[contains(@class, 'Button_Middle__1CSJM')]"]
 button_order_on_up = [By.XPATH, ".//*[@class='Button_Button__ra12g']"]
 page_order = [By.XPATH,'Order_Header__BZXOb']
